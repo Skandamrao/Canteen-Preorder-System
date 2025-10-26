@@ -1,0 +1,2 @@
+-- Optional SQL snapshot (SQLite). The app auto-creates tables on first run.
+-- Seed via: npm run seed

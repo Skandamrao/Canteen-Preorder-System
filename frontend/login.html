@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Login • Canteen</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="brand"><div class="logo">🍽</div><h1>Login</h1></div>
+      <nav><a href="index.html" class="btn-link">Home</a></nav>
+    </header>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Login</h3>
+        <div class="spacer"></div>
+        <input id="login-email" placeholder="Email" type="email"/>
+        <div class="spacer"></div>
+        <input id="login-password" placeholder="Password" type="password"/>
+        <div class="spacer"></div>
+        <button class="btn" onclick="login()">Login</button>
+        <p id="login-msg"></p>
+        <div class="spacer"></div>
+        <p class="muted">Try admin demo: admin@canteen.local / admin123 (after seeding)</p>
+      </div>
+      <div class="card">
+        <h3>Create Account</h3>
+        <div class="spacer"></div>
+        <input id="reg-name" placeholder="Full name"/>
+        <div class="spacer"></div>
+        <input id="reg-email" placeholder="Email" type="email"/>
+        <div class="spacer"></div>
+        <input id="reg-password" placeholder="Password" type="password"/>
+        <div class="spacer"></div>
+        <select id="reg-role">
+          <option value="student" selected>Student</option>
+          <option value="admin">Admin</option>
+        </select>
+        <div class="spacer"></div>
+        <button class="btn success" onclick="register()">Create Account</button>
+        <p id="reg-msg"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
